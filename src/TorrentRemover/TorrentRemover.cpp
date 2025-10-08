@@ -1,14 +1,14 @@
+#include "TorrentRemover.h"
+
 #include <iostream>
 #include <filesystem>
 
-namespace fs = std::filesystem;
-
-int main()
+void TorrentRemover::RemoveTorrents()
 {
-    fs::path home{std::getenv("HOME")};
+    std::filesystem::path home{std::getenv("HOME")};
     home /= "Downloads";
 
-    fs::directory_iterator download_iterator{home};
+    std::filesystem::directory_iterator download_iterator{home};
 
     for (auto &&item : download_iterator)
     {
@@ -18,5 +18,5 @@ int main()
             std::filesystem::remove(item);
         }   
     }
-    return 0;
+    return;
 }
