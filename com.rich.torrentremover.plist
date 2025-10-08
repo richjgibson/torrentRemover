@@ -4,15 +4,16 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>com.rich.torrentremover</string>
+    <string>com.rich.removeTorrents</string>
 
     <key>ProgramArguments</key>
     <array>
-      <string>/Users/rich/bin/torrentremover</string>
+      <string>/Users/rich/bin/removeTorrents</string>
     </array>
 
     <!-- Run once when the agent is loaded -->
-    <key>RunAtLoad</key>
+    <key>StartInterval</key>
+    <value>5</value>
     <true/>
 
     <!-- KeepAlive can be configured, but we leave it off for a simple run -->
