@@ -13,8 +13,7 @@
 
     <!-- Run once when the agent is loaded -->
     <key>StartInterval</key>
-    <value>5</value>
-    <true/>
+    <integer>300</integer>
 
     <!-- KeepAlive can be configured, but we leave it off for a simple run -->
   </dict>
