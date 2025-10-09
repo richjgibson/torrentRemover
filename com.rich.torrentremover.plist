@@ -8,7 +8,7 @@
 
     <key>ProgramArguments</key>
     <array>
-      <string>/Users/rich/bin/removeTorrents</string>
+      <string>~/bin/removeTorrents</string>
     </array>
 
     <!-- Run once when the agent is loaded -->
