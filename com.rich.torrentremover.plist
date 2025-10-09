@@ -15,6 +15,12 @@
     <key>StartInterval</key>
     <integer>300</integer>
 
+    <key>StandardOutPath</key>
+    <string>/Users/rich/Library/removeTorrents.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/rich/Library/removeTorrents.err</string>
+
     <!-- KeepAlive can be configured, but we leave it off for a simple run -->
   </dict>
 </plist>
