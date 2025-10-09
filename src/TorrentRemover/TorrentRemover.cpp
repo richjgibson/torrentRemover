@@ -5,10 +5,10 @@
 
 void TorrentRemover::RemoveTorrents()
 {
-    std::filesystem::path home{std::getenv("HOME")};
-    home /= "Downloads";
+    std::filesystem::path torrent_path{std::getenv("HOME")};
+    torrent_path /= "Downloads";
 
-    std::filesystem::recursive_directory_iterator download_iterator{home};
+    std::filesystem::recursive_directory_iterator download_iterator{torrent_path};
 
     for (auto &&item : download_iterator)
     {
